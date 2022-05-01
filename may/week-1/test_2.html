@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            background-color: red;
+            width: 800px;
+            height: 150px;
+            display: flex;
+            margin: 100px auto;
+            justify-content: center;
+            align-items: center;
+            column-gap: 10px;
+         }
+        .container div {
+            background-color: green;
+            width: 170px;
+            height: 50px;
+            display: flex;
+            font-size: small;
+         }
+        .item1 {
+            display: flex; 
+            justify-content: flex-start;
+            align-items: flex-start;
+         }
+        .item2 {
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .item3 {
+            display:flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+    </style>
+    <title>Flexbox page</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item1"> child 1</div>
+
+        <div class="item2" > child 2 </div>
+
+        <div class="item3">  child 3 </div>
+
+    </div>
+</body>
+</html>
