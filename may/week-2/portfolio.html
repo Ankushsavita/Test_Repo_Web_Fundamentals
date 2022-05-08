@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&family=Syncopate&display=swap" rel="stylesheet">
+  
+    <script src="https://kit.fontawesome.com/d876524b6d.js" crossorigin="anonymous"></script>
+    <style>
+        /* navbar section */
+        .navbar {
+            position: fixed;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            background-color: white;
+            box-shadow: 0px 0px 5px black;
+        }
+        ul {
+            list-style-type: none;
+            font-weight: 600;
+            font-family: 'Lato', sans-serif;
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: flex;
+            flex-direction: row;
+            padding: 25px;
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+      /* banner section */
+        .container {
+           width: 100%;
+           margin: 2% 0%;
+           padding: 6% 0%;
+           left: 0%;
+           right: 0%;
+        }
+        .banner {
+           display: grid;
+           grid-template-columns: repeat(2,50%);
+           background-color: #fffacd;
+        }
+        .banner .image img {
+            width: 100%;
+        }
+        .banner .content {
+            font-family: 'Lato', sans-serif;
+            padding: 6% 0%;
+        }
+        .banner .content .title {
+            font-size: 50px;
+        }
+        .banner .content .title span {
+            font-weight: 400;
+        }
+        .banner .content .desc {
+            font-size: 26px;
+        }
+        .banner .content .btn {
+            background-color: #20b2aa;
+            color: white;
+            border: none;
+            font-size: 17px;
+            border-radius: 30px;
+            cursor: pointer;
+            padding: 2% 5%;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* about section */
+        .about {
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+        }
+        .about .image img {
+            width: 80%;
+        }
+        .about .content {
+            font-family: 'Lato', sans-serif;
+            padding: 20% 10%; 
+        }
+        .about .content .title  {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+       /* skills section */
+        .skills .content{
+          font-family:"lato",sans-serif;
+          padding:2% 10%;
+          background-color: #dcdfb7;
+        }
+        .skills .content .title{
+          font-size: 25px;
+          font-weight: 700;
+          text-align:center;
+        }
+        .skills .grid-container{
+          display:grid;
+          grid-template-columns: repeat(4,25%);
+          grid-gap:10px 20px;
+        }
+        .skills .grid-container .grid-item{
+          border:1px solid #ddd;
+          background-color: #fff;
+          border-bottom: 5px solid #6b8363;
+          padding: 5% 3%;
+          border-radius: 8px;
+          margin-right: 45px;
+        }
+        .fa-brands{
+          margin-right: 8%;
+          font-size: 19px;
+          color:black;
+        }
+      /* contact section */
+        .contact {
+          display:grid;
+          grid-template-columns: repeat(2,50%);
+        }
+       .contact .image img{
+          width:60%;
+          margin-left:25%;
+        }
+       .contact .content{
+          font-family:"Lato",sans-serif;
+          padding:0% 10%;
+        }
+       .contact .content .title{
+          font-size: 20px;
+          font-weight: 800;
+        }
+       .contact .content .form .field{
+          padding:2% 0%
+        }
+       .contact .content .form .input{
+          font-size:16px;
+          font-family: "Lato";
+          padding:2% 1%;
+          border: 1px solid black;
+          font-weight: 700;
+        }
+
+     /* footer section */
+        .footer {
+            text-align: center;
+            background-color: #dcdcdc;
+            padding: 3px;
+         }
+         .footer .social-sites .footer-icons  a {
+            margin-left: 30px;
+         }
+         .footer .social-sites .footer-icons p span{
+             font-size: 20px;
+         }
+         
+         </style>
+   
+    <title>portfolio website</title>
+</head>
+<body>
+      <main class="main-container">
+          <!-- navbar section -->
+          <nav class="navbar">
+              <ul>
+                  <li>
+                      <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+              </ul>
+          </nav>
+          <!-- banner section  -->
+          <section class="container banner">
+             <section class="image">
+              <img src="https://i.pinimg.com/originals/51/88/60/518860010eb9529bb08e25c1201f64b0.png" alt="banner image logo" />
+             </section>
+             <section class="content">
+                 <p class="title">Hey I'm <span>Ankush Savita</span></p>
+                 <p class="desc">I am a Software developer</p>
+                 <button class="btn">About me</button>
+             </section>
+          </section>
+          <!-- About Section -->
+          <section class="container about">
+               <section class="content">
+                   <p class="title"><span>About me</span></p>
+                   <P>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with: Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:</P>
+               </section>
+               <section class="image">
+                <img src="https://i.pinimg.com/originals/7e/c7/0d/7ec70d2eeb224de2f13815b018b213de.png" alt="banner image logo" />
+               </section>
+
+          </section>
+          <!-- skills section -->
+        
+        <div class="container skills">
+            <div class="content">
+                <div class="title"> Skills</div>
+                <div class="grid-container">
+                <div class="grid-item"><i class="fa-brands fa-html5"></i>HTML</div>
+                <div class="grid-item"><i class="fa-brands fa-css3"></i>CSS</div>
+                <div class="grid-item"><i class="fa-brands fa-bootstrap"></i>Bootstrap</div>
+                <div class="grid-item"><i class="fa-brands fa-js"></i>Javascript</div>
+            </div>
+            </div>
+        </div>
+
+              </section>
+          </section>
+                  <!-- contact section -->
+        <div class="container contact">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/7c/fe/04/7cfe045ae38824434e792d711bf02298.png" alt="contact-img"/>
+            </div>
+            <div class="content">
+                <p class="title">Get in touch with me here!</p>
+                <form action="#" class="form">
+                    <div clas="field">
+                        <label for="email" class="title">Your email Id:</label><br/>
+                        <input type="text" id="email" name="email" value="email@gmail.com" class="input"/>
+                    </div>
+                    <div clas="field">
+                        <label for="message" class="title">Your message</label><br/>
+                        <textarea name="" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </div>
+            
+        </div>
+        <!-- footer section -->
+       <section class="footer">
+           <section class="footer-title">
+               <h2>Ankush Savita</h2>
+           </section>
+           <section class="social-sites">
+               <section class="footer-icons">
+                   <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                   <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                   <p>@<span id="year"></span>copyright all right reserved</p>
+                   <script>
+                       var d = new Date();
+                       var n = d.getFullYear();
+                       document.getElementById("year").innerHTML = n;
+                   </script>
+
+               </section>
+           </section>
+       </section>
+
+      </main>
+</body>
+</html>
