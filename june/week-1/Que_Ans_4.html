@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prime number</title>
+
+    <style>
+      div {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h4>
+        Question 4: WAP to print Nth prime number.(Input: 5, Output: 11, since
+        11 is the 5th prime number)
+      </h4>
+
+      <h4>Answer :</h4>
+
+      <h5>Click on Button <button onclick="prime()">click me</button></h5>
+
+      <p id="output"></p>
+
+      <script>
+        function prime() {
+          let num = prompt("Enter a number");
+
+          let prime = 0;
+          let text = "";
+
+          if (num != null) {
+            let n = num;
+            let count = 0;
+            let index = 0;
+            for (let i = 2; i < num; i++) {
+              num++;
+
+              let j = 0;
+              for (j = 2; j <= i; j++) {
+                if (i % j == 0) break;
+              }
+              if (j == i) {
+                count = j;
+                index++;
+              }
+              if (index == n) break;
+            }
+            document.getElementById("output").innerHTML = count;
+          } else {
+            document.getElementById("output").innerHTML =
+              "Sorry Empty value not allow";
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>

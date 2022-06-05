@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>functions</title>
+    <style>
+      div {
+        margin-left: 20px;
+        margin-top: 10px;
+      }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div>
+      <h4>
+        Question 1: In how many types can we create functions? State the
+        difference between those types by giving examples
+      </h4>
+      <h4>Answer :</h4>
+
+      <p>
+        There are four ways a function can be created in JavaScript. They are as
+        follows:
+      </p>
+      <ul>
+        <li><h4>Function Declaration</h4></li>
+        <li><h4>Function Expression</h4></li>
+        <li><h4>Arrow Functions</h4></li>
+        <li><h4>Function constructor</h4></li>
+      </ul>
+
+      <h4>Difference Between those types:</h4>
+      <hr />
+
+      <h4>1. Function Declaration :</h4>
+
+      <p>
+        A function declaration starts with the function keyword. It can return a
+        primitive type value, object, or another function.
+      </p>
+      <pre>
+      Example:-
+              function sayHi(){  // function declaration
+                  console.log('Hello')
+              }
+                sayHi();
+    </pre
+      >
+      <hr />
+
+      <h4>2. Function Expression :</h4>
+      <p>
+        The function keyword can be used to define a function inside an
+        expression. In a function expression, you assign a function to a
+        variable.
+      </p>
+      <pre>
+          Example:-
+             let sayHello = function(){   //function Expression
+                 console.log('say Hello function');
+             }
+             sayHello();
+    </pre
+      >
+      <hr />
+
+      <h4>3. Anonymous Function/ Arrow Function :</h4>
+      <p>
+        The arrow functions were introduced in ECMA 2015 with the main purpose
+        of giving a shorter syntax to a function expression. Besides providing
+        shorter syntax, which increases the readability of the code, it does not
+        have its own value of the this object. The value of this object inside
+        an arrow function is inherited from the enclosing scope.
+      </p>
+
+      <pre>
+            Example:-
+                 function(){   // anonymous function
+                     console.log('say Hello function');
+                 }
+      </pre>
+      <hr />
+
+      <h4>4. Function constructor :</h4>
+      <p>
+        A function can be dynamically created using the Function constructor,
+        but it suffers from security and performance issues and is not advisable
+        to use.
+      </p>
+      <p>
+        You can create a function using the Function constructor as shown in the
+        following example.
+      </p>
+      <pre>
+      Example:-
+          var add = Function('num1','num2','return num1+num2');
+
+          let res = add (7,8);
+
+          console.log(res); // 15
+    </pre
+      >
+      <hr />
+    </div>
+  </body>
+</html>
